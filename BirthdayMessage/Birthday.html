@@ -1,16 +1,21 @@
 <!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
 
-<html><head><meta content="text/html;">  
-    <title>Happy Birthday</title></head>
-  <body>
-    <button id="bike">The Bike</button>
-    <div id="bikeinfo" style="display:none;">
-      <p>This is the latest in the string of bikes you have taught me to ride, fix, and love.</p>
-    </div>
-</body></html>
-<script>
-  $(#bike).onClick(function(){
-  $(#bike).hide();
-  $(#bikeinfo).show();
-  }
-</script>
+<html>
+    <head>
+        <meta content="text/html;">  
+        <title>Happy Birthday</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <button id="bike">The Bike</button>
+        <div id="bikeinfo" style="display:none;">
+            <p>This is the latest in the string of bikes you have taught me to ride, fix, and love.</p>
+        </div>
+        <script>
+            $("#bike").click(function () {
+                $("#bike").hide();
+                $("#bikeinfo").show();
+            });
+        </script>
+    </body>
+</html>
